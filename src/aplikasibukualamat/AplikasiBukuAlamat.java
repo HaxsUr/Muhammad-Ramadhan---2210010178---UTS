@@ -227,6 +227,7 @@ if (selectedRow != -1) {
             int selectedRow = jTable1.getSelectedRow();
         if (selectedRow != -1) {
             tableModel.removeRow(selectedRow);
+            clearFields();
         } else {
             JOptionPane.showMessageDialog(this, "Pilih baris untuk dihapus!");
         }
